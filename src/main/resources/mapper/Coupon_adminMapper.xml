@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="eda.mapper.Coupon_adminMapper">
+
+    <insert id="addHongBao" parameterType="eda.domain.Coupon_admin">
+        insert into
+            coupon_admin
+        values (null,#{cu_name},#{cu_quota},#{cu_minmoney},#{cu_status})
+    </insert>
+    <select id="selFandAll" resultType="eda.domain.Coupon_admin">
+        select * from  coupon_admin
+    </select>
+</mapper>

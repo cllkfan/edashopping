@@ -1,26 +1,20 @@
 package eda.domain;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
 import java.util.Date;
 
 /**
  * @author TaoMinghui
  * @create 2021-10-24 22:15
  */
-public class Users {
-    private int u_id;
-    private String username;
-    private String pwd;
-    private String u_name;
-    private String u_tel;
-    private String u_email;
-    private int v_id;
-    private Date u_date;
-    private Date u_birth;
-    private String u_sex;
-    private int u_status;
-    private String test1;
-    private String test2;
 
+@Data
+@AllArgsConstructor
+@NoArgsConstructor
+public class Users {
     public int getU_id() {
         return u_id;
     }
@@ -124,4 +118,19 @@ public class Users {
     public void setTest2(String test2) {
         this.test2 = test2;
     }
+
+    private int u_id;
+    private String username;
+    private String pwd;
+    private String u_name;
+    private String u_tel;
+    private String u_email;
+    private int v_id;
+    private Date u_date;
+    private Date u_birth;
+    private String u_sex;
+    private int u_status;
+    private String test1;
+    private String test2;
+
 }

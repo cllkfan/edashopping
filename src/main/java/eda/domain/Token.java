@@ -59,4 +59,10 @@ public class Token {
     public void setTest2(String test2) {
         this.test2 = test2;
     }
+
+    public void setLogin(boolean b) {
+    }
+
+    public void setUsername(String username) {
+    }
 }
